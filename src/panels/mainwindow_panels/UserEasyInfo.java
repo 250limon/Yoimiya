@@ -41,7 +41,7 @@ public class UserEasyInfo extends JPanel {
     @Override
     public void paint(Graphics g) {
         super.paint(g);
-        g.drawImage(User.getUser().getUser_image(), 0, 0, 60, 60, this);
+        g.drawImage(User.getInstance().getUser_image(), 0, 0, 60, 60, this);
         Graphics2D graphics2D=(Graphics2D) g;
         graphics2D.setFont(new Font(Font.SERIF,Font.PLAIN,20));
         graphics2D.drawString(name,70,30);
